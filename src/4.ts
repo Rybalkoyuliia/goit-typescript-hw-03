@@ -1,6 +1,6 @@
 class Key {
   private signature: number;
-  constructor(signature: number) {
+  constructor() {
     this.signature = Math.random();
   }
 
@@ -45,7 +45,7 @@ class MyHouse extends House {
   }
 }
 
-const key = new Key(3);
+const key = new Key();
 
 const house = new MyHouse(key);
 const person = new Person(key);
